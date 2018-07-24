@@ -144,3 +144,36 @@ aside {
     float: left;
     margin-right: 10px;
 }
+
+/* forms */
+
+iuput, textarea, select, .uneditable-input {
+    border: 1px solid #bbb;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    @include box_sizing;
+}
+
+input {
+    height: auto !important;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+#error_explanation {
+    color: #f00;
+    ul {
+        list-style: none;
+        margin: 0 0 18 px 0;
+    }
+    
+}
+
+.field_with_errors {
+    @extend .form-group;
+    @extend .has-error;
+    margin-bottom: 0;
+}
